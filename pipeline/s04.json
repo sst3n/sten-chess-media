@@ -1,0 +1,8 @@
+{"title": "How to LOSE in 2 moves",
+ "segments": [
+  {"say": "This is the fastest way to lose a game of chess. Two moves. That's it.", "caption": "Fastest loss in chess"},
+  {"say": "White pushes the f pawn. Weird, but okay. Black plays e5.", "moves": ["f3","e5"], "caption": "Looks harmless..."},
+  {"say": "Then White pushes the g pawn too. And now the king has no defenders on that diagonal.", "moves": ["g4"], "arrows": [["d8","h4"]], "caption": "The diagonal is OPEN"},
+  {"say": "Queen to h4. Checkmate.", "moves": ["Qh4#"], "expect_mate": true, "caption": "Queen h4!"},
+  {"say": "This is called the Fool's Mate. Rule number one: don't open the diagonal to your king. Tag a friend who would fall for this.", "banner": "FOOL'S MATE", "banner_y": 1170, "caption": "Tag a friend who'd fall for it"}
+ ]}

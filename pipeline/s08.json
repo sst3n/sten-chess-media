@@ -1,0 +1,8 @@
+{"title": "Win the QUEEN in one move", "fen": "q3k3/8/8/3N4/8/8/8/4K3 w - - 0 1",
+ "segments": [
+  {"say": "White to move. One knight move wins the black queen. Can you find it?", "caption": "Win the queen in 1 move"},
+  {"say": "Pause and look at where the king and queen are standing.", "banner": "3... 2... 1..."},
+  {"say": "Knight to c7. Check! And it attacks the queen at the same time.", "moves": ["Nc7+"], "arrows": [["c7","e8"],["c7","a8"]], "caption": "Knight c7, check!"},
+  {"say": "The king has to move. And the knight takes the queen.", "moves": ["Kd7","Nxa8"], "expect_captures": ["q"], "caption": "Free queen"},
+  {"say": "This is called a royal fork. Did you find it? Comment how fast.", "banner": "ROYAL FORK"}
+ ]}

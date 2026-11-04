@@ -1,0 +1,10 @@
+{"title": "REVERSE Scholar's Mate",
+ "segments": [
+  {"say": "Everyone knows the four move checkmate. But what if Black does it to you?", "caption": "BLACK DOES IT TO YOU"},
+  {"say": "White starts normal. King pawn. Black copies.", "moves": ["e4","e5"], "caption": "Looks normal..."},
+  {"say": "Bishop to c4. Black copies again. Now both bishops are staring at the weak f pawns.", "moves": ["Bc4","Bc5"], "arrows": [["c5","f2"]], "caption": "Eyes on f2"},
+  {"say": "White plays d3. And Black's queen jumps straight to h4.", "moves": ["d3","Qh4"], "caption": "Queen out early?!"},
+  {"say": "White attacks the queen with the knight. Feeling very smart.", "moves": ["Nf3"], "caption": "Big brain move?"},
+  {"say": "Queen takes f2. Checkmate. In four moves.", "moves": ["Qxf2#"], "expect_mate": true, "caption": "Game over in 4"},
+  {"say": "Would you have fallen for this? Comment below, and follow for a new trap every day.", "banner": "CHECKMATE!", "caption": "Would YOU fall for it?"}
+ ]}

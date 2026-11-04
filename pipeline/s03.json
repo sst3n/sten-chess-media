@@ -1,0 +1,9 @@
+{"title": "Is this move LEGAL?",
+ "segments": [
+  {"say": "Is this move even legal? Most beginners say no.", "caption": "Legal or illegal?", "setup": []},
+  {"say": "White pushes the pawn. Black brings out the knight.", "moves": ["e4","Nf6"], "caption": "Normal start"},
+  {"say": "White pushes again, attacking the knight. Black plays d5, right next to the white pawn.", "moves": ["e5","d5"], "caption": "Pawn jumps next to it"},
+  {"say": "Now the white pawn captures diagonally, onto an empty square. And the black pawn disappears.", "moves": ["exd6"], "arrows": [["e5","d6"]], "caption": "Wait... what?!"},
+  {"say": "Yes, it's legal. It's called en passant. If a pawn jumps two squares to land next to yours, you can capture it like it only moved one. But only on the very next move.", "banner": "EN PASSANT", "caption": "100% legal"},
+  {"say": "Did you know this rule? Comment yes or no, and follow for more.", "caption": "Did you know this rule?"}
+ ]}

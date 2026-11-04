@@ -1,0 +1,8 @@
+{"title": "One move wins. Find it.", "fen": "6k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+ "segments": [
+  {"say": "White to move. One move wins the game instantly. Can you see it?", "caption": "White to move & win"},
+  {"say": "Pause the video. Look at the black king, and look at its own pawns.", "banner": "3... 2... 1...", "banner_y": 1170, "caption": "PAUSE & FIND IT"},
+  {"say": "Rook to d8. Checkmate.", "moves": ["Rd8#"], "expect_mate": true, "caption": "Rook d8!"},
+  {"say": "The king is locked in by its own pawns. This is the back rank mate. Always give your king an escape square.", "banner": "BACK RANK MATE", "banner_y": 1170, "caption": "Give your king AIR"},
+  {"say": "Did you get it? Comment how fast you found it, and follow for a new puzzle every day.", "caption": "How fast did YOU see it?"}
+ ]}
