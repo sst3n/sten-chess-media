@@ -1,0 +1,57 @@
+{
+ "slug": "caro-kann-trap",
+ "spec": {
+  "title": "Checkmate in 6 moves",
+  "segments": [
+   {
+    "say": "This checkmate happens in only six moves, and it catches real players.",
+    "caption": "6-move checkmate"
+   },
+   {
+    "say": "The Caro-Kann. White grabs the center. Black takes on e4.",
+    "moves": [
+     "e4",
+     "c6",
+     "d4",
+     "d5",
+     "Nc3",
+     "dxe4",
+     "Nxe4",
+     "Nd7"
+    ],
+    "caption": "Caro-Kann"
+   },
+   {
+    "say": "White sets a trap with queen e2. Black plays the natural knight f6.",
+    "moves": [
+     "Qe2",
+     "Ngf6"
+    ],
+    "caption": "Natural move?"
+   },
+   {
+    "say": "Knight d6. Checkmate. The king can't move, because its own pieces block every square.",
+    "moves": [
+     "Nd6#"
+    ],
+    "expect_mate": true,
+    "caption": "Knight d6 mate"
+   },
+   {
+    "say": "A smothered mate in the opening. Have you ever fallen for this?",
+    "caption": "Ever fallen for it?"
+   }
+  ],
+  "teaser": "MATE IN 6 MOVES"
+ },
+ "yt_title": "Checkmate in 6 moves 😳 Caro-Kann smothered mate #chess",
+ "desc": "A smothered mate in just 6 moves - and it really happens in online games.\n\nThe line: 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nd7 5.Qe2 Ngf6?? 6.Nd6#\n\nThe e7 pawn is pinned by the queen, so it can't take the knight.\n\nEver fallen for this? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #carokann #chesstraps #smotheredmate #shorts",
+ "tags": [
+  "chess",
+  "caro kann",
+  "chess trap",
+  "smothered mate",
+  "6 move checkmate"
+ ],
+ "num": 21
+}

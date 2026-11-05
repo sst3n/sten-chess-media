@@ -57,6 +57,11 @@ def validate(spec):
     if width(spec["title"], BOLD, TITLE_PX) > 1030: errs.append(f"title too long: {spec['title']!r}")
     board = chess.Board(spec.get("fen", chess.STARTING_FEN))
     if not board.is_valid(): errs.append("start position invalid")
+    if spec.get("teaser"):
+        s0 = spec["segments"][0]
+        if s0.get("moves") or s0.get("setup") or s0.get("fen"): errs.append("teaser needs a first scene without moves")
+        if len(spec["teaser"]) > 22: errs.append("teaser banner too long")
+        if "puzzle" in spec: errs.append("teaser would spoil a puzzle")
     if "puzzle" in spec:
         n = spec["puzzle"]["mate_in"]
         sol_seg = next((s for s in spec["segments"] if s.get("moves")), None)
@@ -144,6 +149,14 @@ def chime(n):
         o = int(dl * SR); out[o:] += (0.16 * np.exp(-t[:n - o] / 0.3) * np.sin(2 * np.pi * f0 * t[:n - o])).astype(np.float32)
     return out
 
+def final_board(spec):
+    b = chess.Board(spec.get("fen", chess.STARTING_FEN))
+    for seg in spec["segments"]:
+        if seg.get("reset"): b = chess.Board(spec.get("fen", chess.STARTING_FEN))
+        if seg.get("fen"): b = chess.Board(seg["fen"])
+        for san in seg.get("setup", []) + seg.get("moves", []): b.push_san(san)
+    return b
+
 def render(spec, outpath, work="/tmp/short", sheet=None):
     errs = validate(spec)
     if errs: raise QAError("; ".join(errs))
@@ -151,6 +164,7 @@ def render(spec, outpath, work="/tmp/short", sheet=None):
     board = chess.Board(spec.get("fen", chess.STARTING_FEN))
     frames, audio, sfx, keyframes = [], [], [], []
     t = 0.0
+    fb = final_board(spec) if spec.get("teaser") else None
     def add(img, sec, key=False):
         p = f"{work}/f{len(frames):04d}.png"; img.save(p); frames.append((p, sec))
         if key: keyframes.append(img)
@@ -165,7 +179,10 @@ def render(spec, outpath, work="/tmp/short", sheet=None):
         cap = seg.get("caption", "")
         last = board.peek() if board.move_stack else None
         arrows = [chess.svg.Arrow(chess.parse_square(a), chess.parse_square(b), color="#e63946cc") for a, b in seg.get("arrows", [])]
-        if not moves:
+        if fb is not None and seg is spec["segments"][0]:
+            chk = fb.king(fb.turn) if fb.is_check() else None
+            add(frame(spec, fb, cap, fb.peek() if fb.move_stack else None, [], chk, spec["teaser"], RED), seg_dur, True)
+        elif not moves:
             chk = board.king(board.turn) if board.is_check() else None
             add(frame(spec, board, cap, last, arrows, chk, seg.get("banner"), RED if board.is_checkmate() else GOLD), seg_dur, True)
         else:

@@ -1,0 +1,85 @@
+{
+ "slug": "opera-game",
+ "spec": {
+  "title": "Most famous chess game",
+  "segments": [
+   {
+    "say": "Paris, 1858. Paul Morphy plays this game at the opera house, and it's still taught to beginners today.",
+    "caption": "Morphy, Paris 1858"
+   },
+   {
+    "say": "Morphy develops fast and sacrifices pieces to open lines to the black king.",
+    "setup": [
+     "e4",
+     "e5",
+     "Nf3",
+     "d6",
+     "d4",
+     "Bg4",
+     "dxe5",
+     "Bxf3",
+     "Qxf3",
+     "dxe5",
+     "Bc4",
+     "Nf6",
+     "Qb3",
+     "Qe7",
+     "Nc3",
+     "c6",
+     "Bg5",
+     "b5",
+     "Nxb5",
+     "cxb5",
+     "Bxb5+",
+     "Nbd7",
+     "O-O-O",
+     "Rd8"
+    ],
+    "caption": "Every piece attacking"
+   },
+   {
+    "say": "Rook takes d7. Rook takes back. Another rook joins the attack.",
+    "moves": [
+     "Rxd7",
+     "Rxd7",
+     "Rd1",
+     "Qe6"
+    ],
+    "caption": "Rook sacrifice"
+   },
+   {
+    "say": "Bishop takes d7, check. Knight takes back. And now the queen sacrifice: queen b8, check!",
+    "moves": [
+     "Bxd7+",
+     "Nxd7",
+     "Qb8+"
+    ],
+    "caption": "Queen b8!!"
+   },
+   {
+    "say": "The knight has to take. Rook d8. Checkmate.",
+    "moves": [
+     "Nxb8",
+     "Rd8#"
+    ],
+    "expect_mate": true,
+    "caption": "Rook d8 mate"
+   },
+   {
+    "say": "Fast development and open lines win games. Would you play like Morphy?",
+    "caption": "Could YOU play like this?"
+   }
+  ],
+  "teaser": "HOW DID THIS HAPPEN?"
+ },
+ "yt_title": "The most famous chess game ever ♟️ Morphy's Opera Game #chess",
+ "desc": "Paul Morphy vs the Duke of Brunswick and Count Isouard - played at the Paris Opera in 1858.\n\nMorphy develops fast, sacrifices a rook and then his QUEEN, and finishes with 17.Rd8#.\n\nWould you play like Morphy? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #operagame #paulmorphy #chesshistory #shorts",
+ "tags": [
+  "chess",
+  "opera game",
+  "paul morphy",
+  "famous chess games",
+  "queen sacrifice"
+ ],
+ "num": 11
+}

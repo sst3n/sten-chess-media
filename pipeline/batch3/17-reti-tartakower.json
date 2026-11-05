@@ -1,0 +1,79 @@
+{
+ "slug": "reti-tartakower",
+ "spec": {
+  "title": "Queen sac, mate in 3 moves",
+  "segments": [
+   {
+    "say": "This checkmate happened in a real game in 1910. And it started with a queen sacrifice.",
+    "caption": "Real game, 1910"
+   },
+   {
+    "say": "Vienna, 1910. Réti against Tartakower. Black just grabbed a knight in the center.",
+    "setup": [
+     "e4",
+     "c6",
+     "d4",
+     "d5",
+     "Nc3",
+     "dxe4",
+     "Nxe4",
+     "Nf6",
+     "Qd3",
+     "e5",
+     "dxe5",
+     "Qa5+",
+     "Bd2",
+     "Qxe5",
+     "O-O-O",
+     "Nxe4"
+    ],
+    "caption": "Black looks fine"
+   },
+   {
+    "say": "Réti plays queen d8, check! Giving away the queen.",
+    "moves": [
+     "Qd8+"
+    ],
+    "caption": "Queen d8!!"
+   },
+   {
+    "say": "The king has to take.",
+    "moves": [
+     "Kxd8"
+    ],
+    "caption": "Forced"
+   },
+   {
+    "say": "Bishop g5. Double check! The bishop and the rook both attack the king.",
+    "moves": [
+     "Bg5+"
+    ],
+    "caption": "Double check!"
+   },
+   {
+    "say": "King c7. And bishop d8. Checkmate.",
+    "moves": [
+     "Kc7",
+     "Bd8#"
+    ],
+    "expect_mate": true,
+    "caption": "Bishop d8 mate"
+   },
+   {
+    "say": "One of the most beautiful finishes in chess history. Would you have seen the queen sac?",
+    "caption": "Would YOU see it?"
+   }
+  ],
+  "teaser": "HOW DID THIS HAPPEN?"
+ },
+ "yt_title": "Queen sacrifice, then DOUBLE CHECK ⚡ Réti vs Tartakower 1910 #chess",
+ "desc": "Réti vs Tartakower, Vienna 1910 - one of the most famous finishes in chess.\n\n9.Qd8+!! Kxd8 10.Bg5++ (double check!) Kc7 11.Bd8#\n\nWould you have seen the queen sacrifice? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #chesshistory #queensacrifice #doublecheck #shorts",
+ "tags": [
+  "chess",
+  "reti tartakower",
+  "queen sacrifice",
+  "double check",
+  "famous chess games"
+ ],
+ "num": 17
+}

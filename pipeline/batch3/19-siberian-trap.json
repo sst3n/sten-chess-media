@@ -1,0 +1,84 @@
+{
+ "slug": "siberian-trap",
+ "spec": {
+  "title": "The Siberian trap",
+  "segments": [
+   {
+    "say": "This checkmate happens in only ten moves. Here's the trap.",
+    "caption": "The Siberian trap"
+   },
+   {
+    "say": "The Smith Morra Gambit. White gives two pawns for fast development.",
+    "moves": [
+     "e4",
+     "c5",
+     "d4",
+     "cxd4",
+     "c3",
+     "dxc3",
+     "Nxc3",
+     "Nc6",
+     "Nf3",
+     "e6"
+    ],
+    "caption": "Gambit opening"
+   },
+   {
+    "say": "Bishop c4. Queen c7. White castles. Knight f6. Queen e2.",
+    "moves": [
+     "Bc4",
+     "Qc7",
+     "O-O",
+     "Nf6",
+     "Qe2"
+    ],
+    "caption": "Normal moves..."
+   },
+   {
+    "say": "Knight g4, eyeing h2. White kicks it with h3.",
+    "moves": [
+     "Ng4",
+     "h3"
+    ],
+    "arrows": [
+     [
+      "g4",
+      "h2"
+     ]
+    ],
+    "caption": "Kick the knight?"
+   },
+   {
+    "say": "But knight d4! Attacking the queen.",
+    "moves": [
+     "Nd4"
+    ],
+    "caption": "Knight d4!"
+   },
+   {
+    "say": "White takes the knight. And queen h2. Checkmate.",
+    "moves": [
+     "Nxd4",
+     "Qh2#"
+    ],
+    "expect_mate": true,
+    "caption": "Queen h2 mate"
+   },
+   {
+    "say": "This is the Siberian trap. Save it if you play the Sicilian.",
+    "caption": "Save this trap"
+   }
+  ],
+  "teaser": "CHECKMATE ON H2"
+ },
+ "yt_title": "The Siberian trap ❄️ Checkmate on h2 #chess",
+ "desc": "The Siberian trap in the Smith-Morra Gambit.\n\nThe line: 1.e4 c5 2.d4 cxd4 3.c3 dxc3 4.Nxc3 Nc6 5.Nf3 e6 6.Bc4 Qc7 7.O-O Nf6 8.Qe2 Ng4 9.h3?? Nd4! 10.Nxd4 Qh2#\n\nSave it if you play the Sicilian 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #siberiantrap #sicilian #chesstraps #shorts",
+ "tags": [
+  "chess",
+  "siberian trap",
+  "sicilian defense",
+  "smith morra",
+  "chess trap"
+ ],
+ "num": 19
+}

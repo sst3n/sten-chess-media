@@ -1,0 +1,74 @@
+{
+ "slug": "stafford-trap",
+ "spec": {
+  "title": "This trap wins in 8 moves",
+  "segments": [
+   {
+    "say": "Black is about to give away the queen, and still win. Here's the trap.",
+    "caption": "The Stafford trap"
+   },
+   {
+    "say": "White takes the pawn. Black ignores it and plays knight c6.",
+    "moves": [
+     "e4",
+     "e5",
+     "Nf3",
+     "Nf6",
+     "Nxe5",
+     "Nc6"
+    ],
+    "caption": "Black gives a pawn"
+   },
+   {
+    "say": "White grabs the knight. Black recaptures, opening lines for the bishop and queen.",
+    "moves": [
+     "Nxc6",
+     "dxc6"
+    ],
+    "caption": "Lines open up"
+   },
+   {
+    "say": "d3, bishop c5. Now White pins the knight with bishop g5. Looks great.",
+    "moves": [
+     "d3",
+     "Bc5",
+     "Bg5"
+    ],
+    "caption": "Looks great for White..."
+   },
+   {
+    "say": "But Black takes on e4 and gives away the queen!",
+    "moves": [
+     "Nxe4"
+    ],
+    "caption": "Queen sacrifice!"
+   },
+   {
+    "say": "Bishop takes the queen. Then bishop takes f2, check. King e2. And bishop g4. Checkmate.",
+    "moves": [
+     "Bxd8",
+     "Bxf2+",
+     "Ke2",
+     "Bg4#"
+    ],
+    "expect_mate": true,
+    "caption": "Bishop g4 mate"
+   },
+   {
+    "say": "Black gave up the queen and still won. Save this for your next game.",
+    "caption": "Save this trap"
+   }
+  ],
+  "teaser": "HOW DID BLACK WIN?"
+ },
+ "yt_title": "Black gives up the QUEEN and still wins 😱 #chess",
+ "desc": "The Stafford Gambit trap: Black sacrifices the queen and checkmates with two bishops.\n\nThe line: 1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.d3 Bc5 6.Bg5?? Nxe4! 7.Bxd8 Bxf2+ 8.Ke2 Bg4#\n\nWould you have taken the queen? Comment below 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #staffordgambit #chesstraps #checkmate #shorts",
+ "tags": [
+  "chess",
+  "stafford gambit",
+  "chess trap",
+  "queen sacrifice",
+  "checkmate"
+ ],
+ "num": 9
+}

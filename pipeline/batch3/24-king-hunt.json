@@ -1,0 +1,93 @@
+{
+ "slug": "king-hunt",
+ "spec": {
+  "title": "The king walks to his death",
+  "segments": [
+   {
+    "say": "The black king started on g8, and got checkmated on g1. Here's how.",
+    "caption": "Lasker vs Thomas, 1912"
+   },
+   {
+    "say": "London, 1912. Edward Lasker plays one of the craziest king hunts ever.",
+    "setup": [
+     "d4",
+     "e6",
+     "Nf3",
+     "f5",
+     "Nc3",
+     "Nf6",
+     "Bg5",
+     "Be7",
+     "Bxf6",
+     "Bxf6",
+     "e4",
+     "fxe4",
+     "Nxe4",
+     "b6",
+     "Ne5",
+     "O-O",
+     "Bd3",
+     "Bb7",
+     "Qh5",
+     "Qe7"
+    ],
+    "caption": "Lasker vs Thomas, 1912"
+   },
+   {
+    "say": "Queen takes h7, check! The king must take.",
+    "moves": [
+     "Qxh7+",
+     "Kxh7"
+    ],
+    "caption": "Queen sacrifice!"
+   },
+   {
+    "say": "Now every white move is a check, and the king gets pulled across the board.",
+    "moves": [
+     "Nxf6+",
+     "Kh6",
+     "Neg4+",
+     "Kg5",
+     "h4+",
+     "Kf4",
+     "g3+",
+     "Kf3"
+    ],
+    "caption": "Check after check"
+   },
+   {
+    "say": "Bishop e2, check. King g2. Rook h2, check. King g1.",
+    "moves": [
+     "Be2+",
+     "Kg2",
+     "Rh2+",
+     "Kg1"
+    ],
+    "caption": "All the way to g1"
+   },
+   {
+    "say": "And the king steps to d2. Checkmate.",
+    "moves": [
+     "Kd2#"
+    ],
+    "expect_mate": true,
+    "caption": "King d2 mate!"
+   },
+   {
+    "say": "The black king walked from g8 to g1. Have you ever seen a king hunt like this?",
+    "caption": "Craziest king walk?"
+   }
+  ],
+  "teaser": "KING WALKED TO G1!"
+ },
+ "yt_title": "The king walks ACROSS the board to his death 💀 #chess",
+ "desc": "Edward Lasker vs George Thomas, London 1912 - the most famous king hunt in chess.\n\n11.Qxh7+!! Kxh7 and then check after check drags the black king from g8 all the way to g1, finished by 18.Kd2#.\n\nEver seen anything like it? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #kinghunt #chesshistory #queensacrifice #shorts",
+ "tags": [
+  "chess",
+  "king hunt",
+  "edward lasker",
+  "famous chess games",
+  "queen sacrifice"
+ ],
+ "num": 24
+}

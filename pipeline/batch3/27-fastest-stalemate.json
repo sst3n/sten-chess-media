@@ -1,0 +1,68 @@
+{
+ "slug": "fastest-stalemate",
+ "spec": {
+  "title": "The fastest stalemate ever",
+  "segments": [
+   {
+    "say": "Can a chess game end in a draw after just ten moves? Watch this.",
+    "caption": "A 10-move draw?"
+   },
+   {
+    "say": "White's queen goes hunting, eating pawn after pawn.",
+    "moves": [
+     "e3",
+     "a5",
+     "Qh5",
+     "Ra6",
+     "Qxa5",
+     "h5",
+     "h4",
+     "Rah6",
+     "Qxc7",
+     "f6"
+    ],
+    "caption": "Queen goes hunting"
+   },
+   {
+    "say": "More captures. The queen eats the bishop and knight.",
+    "moves": [
+     "Qxd7+",
+     "Kf7",
+     "Qxb7",
+     "Qd3",
+     "Qxb8",
+     "Qh7",
+     "Qxc8",
+     "Kg6"
+    ],
+    "caption": "Eating everything"
+   },
+   {
+    "say": "Queen e6. And Black has no legal moves. Stalemate after ten moves.",
+    "moves": [
+     "Qe6"
+    ],
+    "caption": "Queen e6"
+   },
+   {
+    "say": "This puzzle was composed by Sam Loyd. Black is boxed in by its own pieces. A draw!",
+    "banner": "STALEMATE"
+   },
+   {
+    "say": "Did you know a game could end like this? Comment below.",
+    "caption": "Did you know this?"
+   }
+  ],
+  "teaser": "STALEMATE IN 10?!"
+ },
+ "yt_title": "The fastest STALEMATE possible: 10 moves 🤯 #chess",
+ "desc": "The shortest known stalemate, composed by Sam Loyd: 1.e3 a5 2.Qh5 Ra6 3.Qxa5 h5 4.h4 Rah6 5.Qxc7 f6 6.Qxd7+ Kf7 7.Qxb7 Qd3 8.Qxb8 Qh7 9.Qxc8 Kg6 10.Qe6 - stalemate!\n\nBlack has pieces left but none can move, and the king isn't in check.\n\nDid you know a game could end like this? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #stalemate #samloyd #chessfacts #shorts",
+ "tags": [
+  "chess",
+  "stalemate",
+  "sam loyd",
+  "chess facts",
+  "chess records"
+ ],
+ "num": 27
+}

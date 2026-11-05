@@ -1,0 +1,78 @@
+{
+ "slug": "blackburne-shilling",
+ "spec": {
+  "title": "The trap that cost a shilling",
+  "segments": [
+   {
+    "say": "White grabbed one free pawn, and seven moves later this happened. Here's how.",
+    "caption": "One greedy move..."
+   },
+   {
+    "say": "Black plays knight d4 and leaves the e5 pawn hanging. It's bait.",
+    "moves": [
+     "e4",
+     "e5",
+     "Nf3",
+     "Nc6",
+     "Bc4",
+     "Nd4"
+    ],
+    "caption": "Free pawn?"
+   },
+   {
+    "say": "White takes it. Black's queen jumps to g5, attacking g2.",
+    "moves": [
+     "Nxe5",
+     "Qg5"
+    ],
+    "arrows": [
+     [
+      "g5",
+      "g2"
+     ]
+    ],
+    "caption": "Queen g5!"
+   },
+   {
+    "say": "White takes f7, forking queen and rook. Feels winning. Queen takes g2.",
+    "moves": [
+     "Nxf7",
+     "Qxg2"
+    ],
+    "caption": "Greedy knight"
+   },
+   {
+    "say": "Rook f1. Queen takes e4, check. Bishop blocks.",
+    "moves": [
+     "Rf1",
+     "Qxe4+",
+     "Be2"
+    ],
+    "caption": "Check!"
+   },
+   {
+    "say": "Knight f3. Checkmate.",
+    "moves": [
+     "Nf3#"
+    ],
+    "expect_mate": true,
+    "caption": "Smothered!"
+   },
+   {
+    "say": "It's called the Blackburne Shilling trap. Tag a friend who grabs free pawns.",
+    "caption": "Tag a pawn grabber"
+   }
+  ],
+  "teaser": "ONE FREE PAWN..."
+ },
+ "yt_title": "Never take this FREE pawn 😈 Blackburne Shilling trap #chess",
+ "desc": "The Blackburne Shilling Gambit trap: Black leaves a pawn hanging, and White's greed gets punished.\n\nThe line: 1.e4 e5 2.Nf3 Nc6 3.Bc4 Nd4 4.Nxe5? Qg5 5.Nxf7?? Qxg2 6.Rf1 Qxe4+ 7.Be2 Nf3#\n\nTag a friend who grabs free pawns 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #chesstraps #blackburne #checkmate #shorts",
+ "tags": [
+  "chess",
+  "chess trap",
+  "blackburne shilling",
+  "opening trap",
+  "checkmate"
+ ],
+ "num": 13
+}

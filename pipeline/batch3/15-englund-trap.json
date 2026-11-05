@@ -1,0 +1,74 @@
+{
+ "slug": "englund-trap",
+ "spec": {
+  "title": "The queen walks to c1",
+  "segments": [
+   {
+    "say": "How did the black queen end up checkmating on c1? Watch.",
+    "caption": "How did this happen?"
+   },
+   {
+    "say": "Against d4, Black throws a pawn away with e5. White takes.",
+    "moves": [
+     "d4",
+     "e5",
+     "dxe5",
+     "Nc6",
+     "Nf3",
+     "Qe7"
+    ],
+    "caption": "Weird opening..."
+   },
+   {
+    "say": "White defends the pawn with bishop f4. Queen b4, check.",
+    "moves": [
+     "Bf4",
+     "Qb4+"
+    ],
+    "caption": "Queen check"
+   },
+   {
+    "say": "Bishop blocks. Queen grabs b2.",
+    "moves": [
+     "Bd2",
+     "Qxb2"
+    ],
+    "caption": "Queen goes deep"
+   },
+   {
+    "say": "White attacks the queen with bishop c3. Black calmly plays bishop b4.",
+    "moves": [
+     "Bc3",
+     "Bb4"
+    ],
+    "caption": "Pin!"
+   },
+   {
+    "say": "Queen d2. Bishop takes c3. Queen takes back. And queen c1. Checkmate.",
+    "moves": [
+     "Qd2",
+     "Bxc3",
+     "Qxc3",
+     "Qc1#"
+    ],
+    "expect_mate": true,
+    "caption": "Queen c1 mate"
+   },
+   {
+    "say": "The Englund Gambit trap. Would you have seen it coming?",
+    "caption": "Would you see it?"
+   }
+  ],
+  "teaser": "QUEEN ON C1?!"
+ },
+ "yt_title": "The queen walks ALL the way to c1 👑 Englund Gambit trap #chess",
+ "desc": "The Englund Gambit trap: Black's queen goes deep into White's camp and delivers checkmate on c1.\n\nThe line: 1.d4 e5 2.dxe5 Nc6 3.Nf3 Qe7 4.Bf4 Qb4+ 5.Bd2 Qxb2 6.Bc3? Bb4 7.Qd2 Bxc3 8.Qxc3 Qc1#\n\nWould you have seen it? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #englundgambit #chesstraps #checkmate #shorts",
+ "tags": [
+  "chess",
+  "englund gambit",
+  "chess trap",
+  "opening trap",
+  "checkmate"
+ ],
+ "num": 15
+}
