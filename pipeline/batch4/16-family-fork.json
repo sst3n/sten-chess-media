@@ -1,0 +1,63 @@
+{
+ "slug": "family-fork",
+ "spec": {
+  "title": "Knight attacks EVERYTHING",
+  "fen": "3q3k/6p1/7r/4N3/8/8/5PPP/R5K1 w - - 0 1",
+  "segments": [
+   {
+    "say": "White to move. One knight jump attacks the king, the queen and the rook at once.",
+    "caption": "Find the knight jump"
+   },
+   {
+    "say": "Pause and find it.",
+    "banner": "3... 2... 1..."
+   },
+   {
+    "say": "Knight f7, check! King, queen and rook are all attacked.",
+    "moves": [
+     "Nf7+"
+    ],
+    "arrows": [
+     [
+      "f7",
+      "h8"
+     ],
+     [
+      "f7",
+      "d8"
+     ],
+     [
+      "f7",
+      "h6"
+     ]
+    ],
+    "caption": "Knight f7!"
+   },
+   {
+    "say": "The king has to move. And the knight takes the queen, safely.",
+    "moves": [
+     "Kg8",
+     "Nxd8"
+    ],
+    "expect_captures": [
+     "q"
+    ],
+    "caption": "Bye bye queen"
+   },
+   {
+    "say": "White is now a full queen up. This is called a family fork. Did you find it?",
+    "banner": "FAMILY FORK"
+   }
+  ]
+ },
+ "yt_title": "One knight attacks EVERYTHING 🐴 Family Fork #chesspuzzle",
+ "desc": "White to move: one knight jump attacks the king, queen AND rook.\n\nAnswer: Nf7+! The king must move, and the knight takes the queen on d8 - White is a full queen up. This is called a FAMILY FORK.\n\nDid you find it? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #chesspuzzle #knightfork #chesstactics #shorts",
+ "tags": [
+  "chess",
+  "chess puzzle",
+  "knight fork",
+  "family fork",
+  "chess tactics"
+ ],
+ "num": 16
+}

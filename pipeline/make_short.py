@@ -90,6 +90,14 @@ def validate(spec):
             errs.append(f"seg{i} ends in mate but not flagged")
         for c in seg.get("expect_captures", []):
             if c not in caps: errs.append(f"seg{i} claims capture of {c} but captured {caps}")
+        if seg.get("expect_captures"):
+            # the side that won material must still be able to win, and the capturing piece must be safe
+            winner = not board.turn
+            last = board.peek()
+            if board.has_insufficient_material(winner):
+                errs.append(f"seg{i} 'wins material' but the winner cannot checkmate anymore (draw)")
+            if any(m.to_square == last.to_square for m in board.legal_moves if board.is_capture(m)):
+                errs.append(f"seg{i} capturing piece can be recaptured")
         if len(seg["say"]) > 260: errs.append(f"seg{i} narration too long")
     return errs
 

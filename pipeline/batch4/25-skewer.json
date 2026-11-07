@@ -1,0 +1,55 @@
+{
+ "slug": "skewer",
+ "spec": {
+  "title": "Check... bye bye queen",
+  "fen": "q7/8/2k5/8/3P4/4P3/8/4KB2 w - - 0 1",
+  "segments": [
+   {
+    "say": "White to move. The black king and queen are standing on the same diagonal.",
+    "caption": "Spot the line"
+   },
+   {
+    "say": "Bishop g2. Check!",
+    "moves": [
+     "Bg2+"
+    ],
+    "arrows": [
+     [
+      "g2",
+      "a8"
+     ]
+    ],
+    "caption": "Bishop g2, check!"
+   },
+   {
+    "say": "The king has to step off the diagonal. And the bishop takes the queen.",
+    "moves": [
+     "Kd7",
+     "Bxa8"
+    ],
+    "expect_captures": [
+     "q"
+    ],
+    "caption": "Free queen"
+   },
+   {
+    "say": "This is called a skewer. Attack the big piece, win the piece behind it.",
+    "banner": "SKEWER"
+   },
+   {
+    "say": "Did you know this tactic? Comment yes or no.",
+    "caption": "Did you know it?"
+   }
+  ]
+ },
+ "yt_title": "Check... and the QUEEN is gone 🍢 The Skewer #chess",
+ "desc": "The black king and queen are on the same diagonal. Bg2+! The king must move, and Bxa8 wins the queen.\n\nThis is a SKEWER: attack the more valuable piece, win the one behind it.\n\nDid you know this tactic? 👇\nFollow @stenchess for a new chess trick every day.\n\n#chess #skewer #chesstactics #chesstips #shorts",
+ "tags": [
+  "chess",
+  "skewer",
+  "chess tactics",
+  "win the queen",
+  "beginner chess"
+ ],
+ "num": 25
+}
