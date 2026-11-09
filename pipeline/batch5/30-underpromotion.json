@@ -1,0 +1,35 @@
+{
+ "title": "Make a queen? WRONG.",
+ "fen": "8/pP6/k1K5/p7/8/8/8/8 w - - 0 1",
+ "puzzle": {
+  "mate_in": 1
+ },
+ "segments": [
+  {
+   "say": "White's pawn is about to promote. Everyone makes a queen, right? Pause and think.",
+   "caption": "Queen... or something else?",
+   "arrows": [
+    [
+     "b7",
+     "b8"
+    ]
+   ]
+  },
+  {
+   "say": "A queen isn't even check. Make a knight instead!",
+   "moves": [
+    "b8=N#"
+   ],
+   "expect_mate": true,
+   "caption": "Promote to a KNIGHT"
+  },
+  {
+   "say": "The black king is boxed in by its own pawns, and the knight checks it. Checkmate in one.",
+   "caption": "Boxed in by its own pawns"
+  },
+  {
+   "say": "Would you have made a knight? Comment yes or no.",
+   "caption": "Would you have found it?"
+  }
+ ]
+}

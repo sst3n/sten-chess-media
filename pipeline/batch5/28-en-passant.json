@@ -1,0 +1,28 @@
+{
+ "title": "Can White take this pawn?",
+ "fen": "4k3/3p4/8/4P3/8/8/8/4K3 b - - 0 1",
+ "segments": [
+  {
+   "say": "Black pushes the pawn two squares, right next to White's pawn. Can White capture it?",
+   "moves": [
+    "d5"
+   ],
+   "caption": "Legal or illegal?"
+  },
+  {
+   "say": "Yes! It's called en passant. White captures it as if it had only moved one square.",
+   "moves": [
+    "exd6"
+   ],
+   "banner": "EN PASSANT"
+  },
+  {
+   "say": "But here's the catch. You can only do it on the very next move. Wait one move, and the chance is gone forever.",
+   "caption": "Only on the very next move"
+  },
+  {
+   "say": "Did you know this rule? Comment yes or no.",
+   "caption": "Did you know this?"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "title": "Is this checkmate?",
+ "fen": "6k1/3n1ppp/8/8/8/8/5PPP/4R1K1 w - - 0 1",
+ "segments": [
+  {
+   "say": "White plays rook e8, check. The king is stuck behind its own pawns. Is it checkmate?",
+   "moves": [
+    "Re8+"
+   ],
+   "caption": "Checkmate... right?"
+  },
+  {
+   "say": "No! The knight jumps back to f8 and blocks the check.",
+   "moves": [
+    "Nf8"
+   ],
+   "banner": "NOT MATE"
+  },
+  {
+   "say": "Before you celebrate, check every block and every capture. That's how won games get thrown away.",
+   "caption": "Check blocks AND captures"
+  },
+  {
+   "say": "Did you spot the knight? Comment yes or no.",
+   "caption": "Did you spot it?"
+  }
+ ]
+}
