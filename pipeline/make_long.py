@@ -27,10 +27,12 @@ def lines(text, size, bold=True):
 
 
 def movelist(board):
-    b = chess.Board(); out = []
+    b = board.root(); out = []
     for i, mv in enumerate(board.move_stack):
         san = b.san(mv)
-        out.append(f"{i//2+1}.{san}" if i % 2 == 0 else san)
+        if b.turn == chess.WHITE: out.append(f"{b.fullmove_number}.{san}")
+        elif i == 0: out.append(f"{b.fullmove_number}...{san}")
+        else: out.append(san)
         b.push(mv)
     return " ".join(out)
 
@@ -67,7 +69,7 @@ def frame(chnum, chname, side, board, caption, last=None, arrows=(), check=None,
     if chnum:
         d.text((PX, y), f"#{chnum}", font=F(BOLD, 110), fill=GOLD);
         if side:
-            tag = f"play as {side}"; tw = d.textlength(tag, font=F(BOLD, 34))
+            tag = side; tw = d.textlength(tag, font=F(BOLD, 34))
             d.rounded_rectangle([PX + PW - tw - 40, y + 30, PX + PW, y + 84], 12, fill=(40, 40, 46))
             d.text((PX + PW - tw - 20, y + 38), tag, font=F(BOLD, 34), fill=WHITE)
         y += 140
@@ -143,16 +145,23 @@ def render(spec, outpath, work="/tmp/long", sheet=None):
                               chk, ban, RED if mate else GOLD, flip=flip), step, i == len(moves) - 1)
                     sfx.append((t + lead + i * step, "mate" if mate else "click"))
             t += dur
+            if seg.get("pause"):
+                last2 = board.peek() if board.move_stack else None
+                chk = board.king(board.turn) if board.is_check() else None
+                for k in range(seg["pause"], 0, -1):
+                    add(frame(chnum, chname, side, board, "Pause and decide!", last2, arrows, chk, f"{k}...", RED, flip=flip), 1.0, k == seg["pause"])
+                    sfx.append((t, "click")); t += 1.0
 
     run(spec["intro"], None, spec["title"], None, False)
     for ci, ch in enumerate(spec["chapters"]):
         chapters.append((t, f"#{ci+1} {ch['name']}"))
         n = len(spec["chapters"]) - ci
-        card = title_card(f"#{ci+1}", ch["name"], f"play as {ch['side']}")
+        card = title_card(f"#{ci+1}", ch["name"], ch.get("sub", f"play as {ch['side']}"))
         add(card, 1.6, True); sfx.append((t, "whoosh")); t += 1.6
-        run(ch["segments"], ci + 1, ch["name"], ch["side"], ch.get("flip", False))
-    chapters.append((t, "Which one will you play?"))
-    run(spec["outro"], None, "Which one will you play?", None, False)
+        run(ch["segments"], ci + 1, ch["name"], ch.get("tag", f"play as {ch['side']}"), ch.get("flip", False))
+    ot = spec.get("outro_title", "Which one will you play?")
+    chapters.append((t, ot))
+    run(spec["outro"], None, ot, None, False)
 
     n = int((t + 0.6) * SR); mix = np.zeros(n, np.float32); tt = np.arange(n) / SR
     mix += (0.018 * (np.sin(2*np.pi*110*tt) + .6*np.sin(2*np.pi*164.8*tt) + .4*np.sin(2*np.pi*220*tt))).astype(np.float32)

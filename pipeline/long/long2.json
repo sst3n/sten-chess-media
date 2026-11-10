@@ -1,0 +1,365 @@
+{
+ "title": "10 Chess Rules Most Players Get Wrong",
+ "outro_title": "What's your score?",
+ "intro": [
+  {
+   "say": "Ten chess rules that most players get wrong. Keep score: for every position, decide your answer before I reveal it. Let's see how many you get right out of ten.",
+   "caption": "Keep score. Decide before the answer.",
+   "banner": "10 RULES"
+  }
+ ],
+ "chapters": [
+  {
+   "name": "Castling through check",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "The king and rook haven't moved, and the king is not in check. Can White castle?",
+     "fen": "4k3/8/8/8/2b5/8/8/4K2R w K - 0 1",
+     "caption": "Can White castle here?",
+     "pause": 3
+    },
+    {
+     "say": "No. The bishop attacks f1, and the king may never pass through an attacked square. It also can't castle out of check, or into check.",
+     "arrows": [
+      [
+       "c4",
+       "f1"
+      ]
+     ],
+     "banner": "ILLEGAL",
+     "caption": "Out of, into or THROUGH check"
+    },
+    {
+     "say": "But if only the rook is attacked, castling is completely legal.",
+     "fen": "4k2r/8/8/8/8/8/8/4K2R w K - 0 1",
+     "arrows": [
+      [
+       "h8",
+       "h1"
+      ]
+     ],
+     "caption": "Rook attacked = still legal"
+    },
+    {
+     "say": "White castles, and the rook escapes at the same time.",
+     "moves": [
+      "O-O"
+     ],
+     "caption": "Rook attacked = still legal"
+    }
+   ]
+  },
+  {
+   "name": "The b1 square",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "Now the queenside. Black's rook attacks b1, a square White's rook has to cross. Can White castle?",
+     "fen": "1r4k1/8/8/8/8/8/8/R3K3 w Q - 0 1",
+     "arrows": [
+      [
+       "b8",
+       "b1"
+      ]
+     ],
+     "caption": "The rook crosses b1...",
+     "pause": 3
+    },
+    {
+     "say": "Yes! Only the squares the king walks over matter: e1, d1 and c1. The b1 square doesn't count.",
+     "moves": [
+      "O-O-O"
+     ],
+     "banner": "LEGAL",
+     "caption": "Only the KING's squares count"
+    }
+   ]
+  },
+  {
+   "name": "The king that came back",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "White's king steps to f1, then walks straight back to e1. Nothing has changed. So can White castle now?",
+     "fen": "r3k2r/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1",
+     "moves": [
+      "Kf1",
+      "a6",
+      "Ke1",
+      "a5"
+     ],
+     "caption": "Can White castle now?",
+     "pause": 3
+    },
+    {
+     "say": "No! Once the king has moved, castling is gone for the rest of the game, even if it walks back.",
+     "arrows": [
+      [
+       "e1",
+       "g1"
+      ],
+      [
+       "e1",
+       "c1"
+      ]
+     ],
+     "banner": "NO CASTLING",
+     "caption": "King moved = castling gone"
+    },
+    {
+     "say": "But if only a rook moves away and comes back, you lose castling on that side only.",
+     "fen": "r3k2r/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1",
+     "moves": [
+      "Rg1",
+      "a6",
+      "Rh1",
+      "a5"
+     ],
+     "caption": "Rook moved: that side only"
+    },
+    {
+     "say": "So White can still castle the other way.",
+     "moves": [
+      "O-O-O"
+     ],
+     "caption": "Queenside is still OK"
+    }
+   ]
+  },
+  {
+   "name": "En passant",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "Black pushes the pawn two squares and lands right next to White's pawn. Can White capture it?",
+     "fen": "4k3/3p4/8/4P3/8/8/8/4K3 b - - 0 1",
+     "moves": [
+      "d5"
+     ],
+     "caption": "Can White capture it?",
+     "pause": 3
+    },
+    {
+     "say": "Yes! It's called en passant. White captures it as if it had only moved one square.",
+     "moves": [
+      "exd6"
+     ],
+     "banner": "EN PASSANT",
+     "caption": "Capture 'in passing'"
+    },
+    {
+     "say": "The catch: you can only do it on the very next move. Wait one move and the chance is gone forever.",
+     "caption": "Only on the very next move"
+    }
+   ]
+  },
+  {
+   "name": "Stalemate",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "White is a whole queen up and plays queen g6. Black's king has no moves left. Is that a win?",
+     "fen": "7k/5K2/8/8/8/8/6Q1/8 w - - 0 1",
+     "moves": [
+      "Qg6"
+     ],
+     "caption": "Queen g6. Is it a win?",
+     "pause": 3
+    },
+    {
+     "say": "No! Black is not in check, but has no legal move. That's stalemate, and the game is a draw.",
+     "banner": "DRAW",
+     "caption": "No moves + no check = draw"
+    },
+    {
+     "say": "Queen g7 instead is checkmate, because now the king is in check.",
+     "fen": "7k/5K2/8/8/8/8/6Q1/8 w - - 0 1",
+     "moves": [
+      "Qg7#"
+     ],
+     "expect_mate": true,
+     "caption": "Qg7 is the win"
+    }
+   ]
+  },
+  {
+   "name": "Promotion",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "When a pawn reaches the last rank, it can become a queen, rook, bishop or knight. Even a second queen is allowed. But never a king, and it can't stay a pawn.",
+     "fen": "8/pP6/k1K5/p7/8/8/8/8 w - - 0 1",
+     "arrows": [
+      [
+       "b7",
+       "b8"
+      ]
+     ],
+     "caption": "Any piece. Even a 2nd queen.",
+     "pause": 3
+    },
+    {
+     "say": "And sometimes a queen is the wrong choice. Here a queen isn't even check, but a knight is checkmate.",
+     "moves": [
+      "b8=N#"
+     ],
+     "expect_mate": true,
+     "caption": "Knight = checkmate"
+    }
+   ]
+  },
+  {
+   "name": "The pinned knight",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "Black's queen is hanging on d4, and White's knight attacks it. Can White take the queen?",
+     "fen": "4r1k1/8/8/8/3q4/8/4N3/4K3 w - - 0 1",
+     "arrows": [
+      [
+       "e2",
+       "d4"
+      ]
+     ],
+     "caption": "Can the knight take?",
+     "pause": 3
+    },
+    {
+     "say": "No! The knight is pinned. If it moves, the rook attacks the king, and you can never put your own king in check.",
+     "arrows": [
+      [
+       "e8",
+       "e1"
+      ]
+     ],
+     "banner": "PINNED",
+     "caption": "Never expose your own king"
+    }
+   ]
+  },
+  {
+   "name": "Kings can't touch",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "Can White's king walk to e5, right next to Black's king?",
+     "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+     "arrows": [
+      [
+       "e4",
+       "e5"
+      ]
+     ],
+     "caption": "Can the king go to e5?",
+     "pause": 3
+    },
+    {
+     "say": "Never. Two kings can never stand next to each other, because each one would be in check.",
+     "banner": "ILLEGAL",
+     "caption": "Kings always keep a gap"
+    },
+    {
+     "say": "This face-off is called the opposition, and it decides a lot of endgames.",
+     "caption": "It's called the opposition"
+    }
+   ]
+  },
+  {
+   "name": "Not enough to win",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "White has an extra bishop. Can White still win this?",
+     "fen": "8/8/4k3/8/8/2B5/4K3/8 w - - 0 1",
+     "caption": "Extra bishop. Can White win?",
+     "pause": 3
+    },
+    {
+     "say": "No. King and bishop can't checkmate, so the game is drawn right away. The same goes for king and knight.",
+     "banner": "DRAW",
+     "caption": "King + bishop = draw"
+    },
+    {
+     "say": "Two knights are different: mate can't be forced, but it's possible if the defender blunders, so the game goes on.",
+     "caption": "Two knights: the game goes on"
+    }
+   ]
+  },
+  {
+   "name": "Capturing the checker",
+   "side": "-",
+   "tag": "guess first!",
+   "sub": "Pause and decide",
+   "flip": false,
+   "segments": [
+    {
+     "say": "White's king is in check from the queen. Can the king simply take it?",
+     "fen": "4k3/8/8/8/8/8/3q4/4K3 w - - 0 1",
+     "caption": "Can the king take the queen?",
+     "pause": 3
+    },
+    {
+     "say": "Yes! A king can capture any piece that isn't protected.",
+     "moves": [
+      "Kxd2"
+     ],
+     "banner": "TAKE IT",
+     "caption": "Unprotected = take it"
+    },
+    {
+     "say": "But if a rook protects the queen, taking it would walk into check. The king has to run.",
+     "fen": "3rk3/8/8/8/8/8/3q4/4K3 w - - 0 1",
+     "arrows": [
+      [
+       "d8",
+       "d2"
+      ]
+     ],
+     "caption": "Protected = you can't take"
+    },
+    {
+     "say": "Here king f1 is the only legal move.",
+     "moves": [
+      "Kf1"
+     ],
+     "caption": "The only move: Kf1"
+    }
+   ]
+  }
+ ],
+ "outro": [
+  {
+   "say": "So what's your score out of ten? Write it in the comments, and subscribe for daily chess rules, traps and puzzles.",
+   "caption": "Comment your score out of 10!",
+   "banner": "YOUR SCORE?"
+  }
+ ]
+}
