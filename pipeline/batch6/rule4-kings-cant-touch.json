@@ -1,0 +1,24 @@
+{
+ "title": "Rule #4: Go to e5?",
+ "fen": "8/8/4k3/8/4K3/8/8/8 w - - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number four. Can White's king walk to e5, right next to Black's king?",
+   "arrows": [
+    [
+     "e4",
+     "e5"
+    ]
+   ],
+   "caption": "Walk up to the other king?"
+  },
+  {
+   "say": "Never. Two kings can never stand next to each other, because each one would be in check.",
+   "banner": "ILLEGAL"
+  },
+  {
+   "say": "Did you know this? Rule number 5 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #5 tomorrow!"
+  }
+ ]
+}

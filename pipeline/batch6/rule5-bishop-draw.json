@@ -1,0 +1,18 @@
+{
+ "title": "Rule #5: Is this a win?",
+ "fen": "8/8/4k3/8/8/2B5/4K3/8 w - - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number five. White has an extra bishop. Can White still win?",
+   "caption": "An extra bishop. Win?"
+  },
+  {
+   "say": "No. King and bishop can't checkmate, so the game is a draw right away. Same with king and knight.",
+   "banner": "DRAW"
+  },
+  {
+   "say": "Did you know this? Rule number 6 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #6 tomorrow!"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "title": "Rule #3: Take the queen?",
+ "fen": "4r1k1/8/8/8/3q4/8/4N3/4K3 w - - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number three. Black's queen is hanging, and the knight attacks it. Can White take the queen?",
+   "arrows": [
+    [
+     "e2",
+     "d4"
+    ]
+   ],
+   "caption": "Free queen?"
+  },
+  {
+   "say": "No! The knight is pinned. If it moves, the rook attacks the king, and you can never leave your own king in check.",
+   "arrows": [
+    [
+     "e8",
+     "e1"
+    ]
+   ],
+   "banner": "PINNED"
+  },
+  {
+   "say": "Did you know this? Rule number 4 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #4 tomorrow!"
+  }
+ ]
+}

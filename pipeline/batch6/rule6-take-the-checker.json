@@ -1,0 +1,27 @@
+{
+ "title": "Rule #6: Take the queen?",
+ "fen": "3rk3/8/8/8/8/8/3q4/4K3 w - - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number six. The queen gives check, right next to White's king. Can the king just take it?",
+   "caption": "Take the queen?"
+  },
+  {
+   "say": "No! The rook protects the queen, and a king can never capture into check. King f1 is the only legal move.",
+   "arrows": [
+    [
+     "d8",
+     "d2"
+    ]
+   ],
+   "moves": [
+    "Kf1"
+   ],
+   "banner": "PROTECTED"
+  },
+  {
+   "say": "Did you know this? Rule number 7 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #7 tomorrow!"
+  }
+ ]
+}

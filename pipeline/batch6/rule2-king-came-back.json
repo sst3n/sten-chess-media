@@ -1,0 +1,34 @@
+{
+ "title": "Rule #2: Castle now?",
+ "fen": "r3k2r/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number two. White's king steps to f1, then walks straight back. Nothing has changed. Can White castle now?",
+   "moves": [
+    "Kf1",
+    "a6",
+    "Ke1",
+    "a5"
+   ],
+   "caption": "The king went back. Castle?"
+  },
+  {
+   "say": "No! Once the king has moved, castling is gone for the rest of the game, even if it walks back.",
+   "arrows": [
+    [
+     "e1",
+     "g1"
+    ],
+    [
+     "e1",
+     "c1"
+    ]
+   ],
+   "banner": "NO CASTLING"
+  },
+  {
+   "say": "Did you know this? Rule number 3 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #3 tomorrow!"
+  }
+ ]
+}

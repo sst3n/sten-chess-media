@@ -1,0 +1,27 @@
+{
+ "title": "Rule #1: Castle here?",
+ "fen": "1r4k1/8/8/8/8/8/8/R3K3 w Q - 0 1",
+ "segments": [
+  {
+   "say": "Chess rule number one. Black's rook attacks b1, a square White's rook has to cross. Can White castle queenside? Decide now.",
+   "arrows": [
+    [
+     "b8",
+     "b1"
+    ]
+   ],
+   "caption": "Castle through attacked b1?"
+  },
+  {
+   "say": "Yes! Only the squares the king walks over matter: e1, d1 and c1. The b1 square doesn't count.",
+   "moves": [
+    "O-O-O"
+   ],
+   "banner": "LEGAL"
+  },
+  {
+   "say": "Did you know this? Rule number 2 drops tomorrow. Subscribe so you don't miss it.",
+   "caption": "Rule #2 tomorrow!"
+  }
+ ]
+}
